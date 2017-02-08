@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<title>Grocery Shoppe Stores - Bootstrap 3 Template</title>
+	
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Google Web Fonts -->
+	<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	
+	<!-- CSS Files -->
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	
+	<!--[if lt IE 9]>
+		<script src="js/ie8-responsive-file-warning.js"></script>
+	<![endif]-->
+	
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+	<!-- Fav and touch icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/fav-144.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/fav-114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/fav-72.png">
+	<link rel="apple-touch-icon-precomposed" href="images/fav-57.png">
+	<link rel="shortcut icon" href="images/fav.png">
+	
+</head>
+<body>
+<!-- Wrapper Starts -->
+	<div id="wrapper" class="container">
+	<!-- Header Section Starts -->
+		<header id="header-area">
+		<!-- Nested Row Starts -->
+			<div class="row">
+			<!-- Logo Starts -->
+				<div class="col-md-4 col-xs-12">
+					<div id="logo">
+						<a href="index.html"><img src="images/logo.png" title="Grocery Shoppe" alt="Grocery Shoppe" class="img-responsive" /></a>
+					</div>
+				</div>
+			<!-- Logo Ends -->
+			<!-- Header Right Starts -->
+				<div class="col-md-8 col-xs-12">
+					<div class="row header-top">
+					<!-- Header Links Starts -->
+						<div class="col-md-12 col-xs-12">
+							<div class="header-links">
+								<ul class="list-unstyled list-inline pull-left">
+									<li><a href="index.php">Home</a></li>									
+									<li><a href="cart.php">Shopping Cart</a></li>
+									<li><a href="checkout.php">Checkout</a></li>
+									<li><a href="history.php">Order History</a></li>
+									<li><a href="register.html">Register</a></li>
+									<li><a href="login.html">Login</a></li>
+									<li><a href="logout.php">Logout</a></li>
+									<li><a href="admin_login.php">Admin User Login</a></li>
+								</ul>
+							</div>
+						</div>
+					<!-- Header Links Ends -->					
+					</div>
+				</div>
+			<!-- Header Right Ends -->				
+			</div>
+		<!-- Nested Row Ends -->
+		</header>
+	<!-- Header Section Ends -->
+	<!-- Main Menu Starts -->
+		<nav id="main-menu" class="navbar" role="navigation">
+		<!-- Navbar Cat collapse Starts -->
+			<div class="collapse navbar-collapse navbar-cat-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="index.php">Home</a></li>
+					<li><a href="grocery_list.html">All Products</a></li>
+					<li><a href="cart.php">Shopping Cart</a></li>
+					<li><a href="checkout.php">Checkout</a></li>
+				</ul>
+			</div>
+		<!-- Navbar Cat collapse Ends -->
+		</nav>
+	<!-- Main Menu Ends -->
+	<!-- Main Container Starts -->
+		<div id="main-container">
+
+		<!-- Main Heading Starts -->
+			<h2 class="main-heading text-center">
+				Register <br />
+				<span>Create New Account</span>
+			</h2>
+		<!-- Main Heading Ends -->
+		<!-- Registration Section Starts -->
+			<section class="registration-area">
+				<div class="row">
+					<div class="col-sm-12">
+					<!-- Registration Block Starts -->
+						<div class="panel panel-smart">
+							<div class="panel-heading">
+								<h3 class="panel-title">Username</h3>
+							</div>
+							<div class="panel-body">
+							<!-- Registration Form Starts -->
+								<form id= "myform"  action="register.php" method="post" class="form-horizontal" role="form">
+
+									<div class="form-group">
+										<label for="userName" class="col-sm-3 control-label">User Name *:</label>
+										<div class="col-sm-9">
+											<input type="text" class="form-control" name="userName" id="userName" data-rule-required="true" placeholder="User Name" onkeyup="checkname();">
+											<p id="un"></p>
+											<span id="uncheck"></span>
+										</div>
+									</div>
+
+									
+									<h3 class="panel-heading inner">
+										Password
+									</h3>
+								<!-- Password Area Starts -->
+									<div class="form-group">
+										<label for="inputPassword" class="col-sm-3 control-label">Password *:</label>
+										<div class="col-sm-9">
+											<input type="password" class="form-control" name="inputPassword" id="inputPassword"  placeholder="Password" data-rule-required="true" data-rule-email="true" data-msg-required="Please enter password" data-msg-email="Please enter at least one capital letter, one lower letter and one number. " required minlength="8" >
+											<p id="pw"></p>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<div class="col-sm-offset-3 col-sm-9">
+											<button id = "mbt" type="submit" class="btn btn-danger">
+												Register
+											</button>
+										</div>
+									</div>
+								<!-- Password Area Ends -->
+								</form>
+							<!-- Registration Form Starts -->
+							</div>							
+						</div>
+					<!-- Registration Block Ends -->
+					</div>
+
+				</div>
+			</section>
+		<!-- Registration Section Ends -->
+		</div>
+	<!-- Main Container Ends -->
+	<!-- Footer Section Starts -->
+		<!-- Footer Section Starts -->
+		<footer id="footer-area">
+		<!-- Footer Links Starts -->
+			<div class="footer-links row">
+
+			<!-- Follow Us Links Starts -->
+				<div class="col-md-2 col-sm-6">
+					<h5>Follow Us</h5>
+					<ul>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">Twitter</a></li>
+						<li><a href="#">RSS</a></li>
+						<li><a href="#">YouTube</a></li>
+					</ul>
+				</div>
+			<!-- Follow Us Links Ends -->
+			<!-- Contact Us Starts -->
+				<div class="col-md-4 col-sm-12 last">
+					<h5>Contact Us</h5>
+					<ul>
+						<li>My Company</li>
+						<li>
+							UT Dallas CS6314
+						</li>
+						<li>
+							Email: <a href="#">info@demo.com</a>
+						</li>								
+					</ul>
+					<h4 class="lead">
+						Tel: <span>1(234) 567-8901</span>
+					</h4>
+				</div>
+			<!-- Contact Us Ends -->
+			</div>
+		<!-- Footer Links Ends -->
+		</footer>
+	<!-- Footer Section Ends -->		
+	</div>
+<!-- Wrapper Ends -->
+<!-- JavaScript Files -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>	
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-hover-dropdown.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/validate.js"></script>
+<script src="js/jquery.form.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script type="text/javascript">
+
+function checkname()
+{
+ var name=document.getElementById( "userName" ).value;
+	
+ if(name)
+ {
+  $.ajax({
+  type: 'post',
+  url: 'GradeAdmin.php',
+  data: {
+   user_name:name,
+  },
+  success: function (response) {
+   $( '#uncheck' ).html(response);
+   if(response=="OK")	
+   {
+ 	document.getElementById("mbt").disabled = false;
+	
+	return true;
+   }
+   else
+   {
+
+
+   	document.getElementById("mbt").disabled = true;
+	return false;
+   }
+  }
+  });
+ }
+ else
+ {
+  $( '#uncheck' ).html("");
+  return false;
+ }
+}
+
+
+
+
+
+</script>
+</body>
+</html>
