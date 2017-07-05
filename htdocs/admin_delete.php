@@ -1,5 +1,4 @@
 <?php
-// include "header.html";
 $itemid = $_REQUEST["itemid"];
 
 

@@ -90,13 +90,6 @@ else {
                         window.location.href='login.html';</script>";
 }
 
-// else if customer is not logged in
-// redirect to login page 
-
-
-
-
-
 
 include_once "footer.html";
 ?>
